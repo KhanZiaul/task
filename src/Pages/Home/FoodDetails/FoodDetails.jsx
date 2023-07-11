@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
+import axios from "axios";
 import { useParams } from "react-router-dom";
-// import Swal from "sweetalert2";
+import Swal from "sweetalert2";
 
 const FoodDetails = () => {
 
@@ -13,36 +14,30 @@ const FoodDetails = () => {
         }
     })
 
-    function formHandler() {
-        // e.preventDefault()
-        // const size = e.target.size.value;
-        // const productPiece = e.target.productPiece.value;
-        // const selectedProduct = {
-        //     productId: data?._id,
-        //     brand: data?.brand,
-        //     size: size,
-        //     productPiece: parseInt(productPiece),
-        //     ratings: data?.ratings,
-        //     price: data?.price,
-        //     img: data?.img,
-        //     type: data?.type,
-        //     productName: data?.productName,
-        //     productDetails: data?.productDetails,
-        //     isApproved: data?.isApproved,
-        //     payment: "false"
-        // }
-        // console.log(selectedProduct)
-        // axiosSecure.post('/secetedProduct', selectedProduct)
-        //     .then(data => {
-        //         console.log(data.data)
-        //         if (data.data.acknowledged === true) {
-        //             Swal.fire(
-        //                 'Successfull!',
-        //                 'you selected product successfully',
-        //                 'success'
-        //             )
-        //         }
-        //     })
+    function formHandler(e) {
+        e.preventDefault()
+        const foodPieces = e.target.foodPieces.value;
+        const selectedfood = {
+            productId: data?._id,
+            foodPieces: parseInt(foodPieces),
+            price: data?.price,
+            image: data?.image,
+            name: data?.name,
+            description: data?.description,
+            payment: "false"
+        }
+        console.log(selectedfood)
+        axios.post('http://localhost:5000/secetedFood', selectedfood)
+            .then(data => {
+                console.log(data.data)
+                if (data.data.acknowledged === true) {
+                    Swal.fire(
+                        'Successfull!',
+                        'you select food successfully',
+                        'success'
+                    )
+                }
+            })
 
     }
 
@@ -58,7 +53,7 @@ const FoodDetails = () => {
                     <div className="grid grid-cols-1 gap-5">
                         <div className="flex flex-col lg:flex-row gap-5 items-center">
                             <p className="font-bold text-xl">Total pieces : </p>
-                            <input className="border-2 rounded-md w-20 max-w-xs p-2 border-sky-700" defaultValue={1} min='1' type="number" name="productPiece" id="" />
+                            <input className="border-2 rounded-md w-20 max-w-xs p-2 border-sky-700" defaultValue={1} min='1' type="number" name="foodPieces" id="" />
                         </div>
                         <button className="rounded-md bg-sky-700 text-white font-semibold count px-5 py-3">Add To Cart</button>
                     </div>
