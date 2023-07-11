@@ -27,12 +27,21 @@ const Navbar = () => {
                             HOME
                         </NavLink>
                         <NavLink
-                            to="/shop"
+                            to="/order"
                             className={({ isActive }) =>
                                 isActive ? "active" : ""
                             }
                         >
-                            SHOP
+                            ORDER NOW
+                        </NavLink>
+
+                        <NavLink
+                            to="/order"
+                            className={({ isActive }) =>
+                                isActive ? "active" : ""
+                            }
+                        >
+                            ORDER SUMMARY
                         </NavLink>
 
 
@@ -91,12 +100,23 @@ const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/shop"
+                                to="/order"
                                 className={({ isActive }) =>
                                     isActive ? "active" : ""
                                 }
                             >
-                                SHOP
+                                ORDER NOW
+                            </NavLink>
+                        </li>
+
+                        <li>
+                            <NavLink
+                                to="/order"
+                                className={({ isActive }) =>
+                                    isActive ? "active" : ""
+                                }
+                            >
+                                ORDER SUMMARY
                             </NavLink>
                         </li>
 
