@@ -18,7 +18,7 @@ const Foods = () => {
                         return (
                             <div data-aos="fade-down"
                                 data-aos-easing="linear"
-                                data-aos-duration="1500" className="border-2 p-5 space-y-6 rounded-2xl" key={food._id}>
+                                data-aos-duration="1500" className="border-2 p-5 space-y-6 rounded-2xl shadow-2xl" key={food._id}>
 
                                 <img className="w-full lg:h-80 mx-auto rounded-2xl" src={food.image} alt="" />
                                 <p className="font-bold text-gray-600">{food.name}</p>

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import {  useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 // import Swal from "sweetalert2";
 
 const FoodDetails = () => {
@@ -47,29 +47,24 @@ const FoodDetails = () => {
     }
 
     return (
-        <div className="pt-24 flex flex-col lg:flex-row items-center gap-10 mb-10 w-[95%] mx-auto">
+        <div className="pt-28 flex flex-col lg:flex-row items-center gap-10 mb-10 w-[95%] mx-auto">
             <div>
-                <img className="rounded-xl w-full lg:w-[1200px] lg:h-[500px]" src={data?.img} alt="" />
+                <img className="rounded-xl w-full lg:w-[800px] lg:h-[500px]" src={data?.image} alt="" />
             </div>
-            <div className="space-y-2">
-                <p className="font-bold">Home / {data?.brand}</p>
-                <p className="text-xl font-bold">{data?.productName}</p>
-                <p className="text-3xl font-bold">${data?.price}</p>
+            <div className="space-y-6">
+                <p className="text-xl font-bold">Food Name : {data?.name}</p>
+                <p className="text-3xl font-bold">Price : ${data?.price}</p>
                 <form className="space-y-4" onSubmit={formHandler}>
-                    <select name="size" className="select w-full max-w-xs border-sky-700">
-                        <option disabled selected>Select Size</option>
-                        <option>Small</option>
-                        <option>XL</option>
-                        <option>XXL</option>
-                        <option>Large</option>
-                    </select>
-                    <div className="flex flex-col lg:flex-row gap-5">
-                        <input className="border-2 rounded-md w-20 max-w-xs p-2 border-sky-700" defaultValue={1} min='1' type="number" name="productPiece" id="" />
-                        <button className="rounded-md bg-sky-700 text-white font-semibold count">Add To Cart</button>
+                    <div className="grid grid-cols-1 gap-5">
+                        <div className="flex flex-col lg:flex-row gap-5 items-center">
+                            <p className="font-bold text-xl">Total pieces : </p>
+                            <input className="border-2 rounded-md w-20 max-w-xs p-2 border-sky-700" defaultValue={1} min='1' type="number" name="productPiece" id="" />
+                        </div>
+                        <button className="rounded-md bg-sky-700 text-white font-semibold count px-5 py-3">Add To Cart</button>
                     </div>
                 </form>
-                <p className="text-xl font-bold">Product Details</p>
-                <p className="text-justify">{data?.productDetails}</p>
+                <p className="text-2xl font-bold">Food Details</p>
+                <p className="text-justify">{data?.description}</p>
             </div>
         </div>
     );
