@@ -11,10 +11,10 @@ const Navbar = () => {
     return (
 
         <div className="fixed z-10 w-full">
-            <div className="flex flex-row-reverse lg:flex-row items-center justify-between p-3 lg:p-4 bg-[#222222] shadow-xl font-bold text-white">
+            <div className="flex flex-row-reverse lg:flex-row items-center justify-between p-3 lg:p-4 bg-[#222222] shadow-xl font-bold text-black lg:text-white">
                 <div className="flex items-center gap-2">
                     <img className="w-6" src={''} alt="" />
-                    <Link to='/' className="lg:text-xl cursor-pointer">Fleksa</Link>
+                    <Link to='/' className="lg:text-xl cursor-pointer text-white">Fleksa</Link>
                 </div>
                 <div className="hidden lg:block">
                     <div className="flex items-center gap-5">
@@ -74,7 +74,7 @@ const Navbar = () => {
 
                 <div className="dropdown lg:hidden">
                     <label tabIndex={0} className="lg:hidden">
-                        <AiOutlineMenuUnfold className="text-black"></AiOutlineMenuUnfold>
+                        <AiOutlineMenuUnfold className="text-white"></AiOutlineMenuUnfold>
                     </label>
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
 
