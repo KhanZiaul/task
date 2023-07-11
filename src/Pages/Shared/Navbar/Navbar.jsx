@@ -28,7 +28,7 @@ const Navbar = () => {
                         </NavLink>
 
                         <NavLink
-                            to="/order"
+                            to="/orderSummary"
                             className={({ isActive }) =>
                                 isActive ? "active" : ""
                             }
@@ -92,7 +92,7 @@ const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/order"
+                                to="/orderSummary"
                                 className={({ isActive }) =>
                                     isActive ? "active" : ""
                                 }

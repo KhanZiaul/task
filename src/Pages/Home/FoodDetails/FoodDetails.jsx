@@ -24,6 +24,7 @@ const FoodDetails = () => {
             image: data?.image,
             name: data?.name,
             description: data?.description,
+            estimateTime:data?.estimateTime,
             payment: "false"
         }
         console.log(selectedfood)

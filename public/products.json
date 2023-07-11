@@ -4,104 +4,104 @@
         "description": "A timeless favorite with a thin crust, rich tomato sauce, fresh mozzarella, and fragrant basil leaves.",
         "price": 12.99,
         "image": "https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "30 minutes"
+        "estimateTime" : "30 minutes"
     },
     {
         "name": "Spicy Thai Red Curry",
         "description": "A fiery combination of tender chicken, vibrant vegetables, and aromatic herbs in a luscious coconut milk-based curry sauce.",
         "price": 15.99,
         "image": "https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "35 minutes"
+        "estimateTime" : "35 minutes"
     },
     {
         "name": "Mouthwatering BBQ Ribs",
         "description": "Fall-off-the-bone tender pork ribs slathered in a tangy barbecue sauce, served with crispy fries and coleslaw.",
         "price": 18.99,
         "image": "https://images.unsplash.com/photo-1534797258760-1bd2cc95a5bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80",
-        "estimate-time" : "20 minutes"
+        "estimateTime" : "20 minutes"
     },
     {
         "name": "Creamy Mushroom Risotto",
         "description": "Indulge in a rich and creamy Arborio rice dish cooked to perfection with earthy mushrooms, Parmesan cheese, and a hint of white wine.",
         "price": 14.99,
         "image": "https://images.unsplash.com/photo-1653982151807-a2ee87286ae1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "50 minutes"
+        "estimateTime" : "50 minutes"
     },
     {
         "name": "Fresh Greek Salad",
         "description": "A refreshing medley of crisp lettuce, juicy tomatoes, cucumber, Kalamata olives, feta cheese, and a zesty lemon-herb dressing.",
         "price": 9.99,
         "image": "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "35 minutes"
+        "estimateTime" : "35 minutes"
     },
     {
         "name": "Savory Beef Bourguignon",
         "description": "Tender beef braised in red wine, slow-cooked with onions, carrots, and mushrooms, resulting in a rich and flavorful French classic.",
         "price": 17.99,
         "image": "https://images.unsplash.com/photo-1615937691194-97dbd3f3dc29?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "45 minutes"
+        "estimateTime" : "45 minutes"
     },
     {
         "name": "Crunchy Fish Tacos",
         "description": "Crispy beer-battered fish fillets topped with shredded cabbage, tangy lime crema, and a drizzle of chipotle sauce, all wrapped in warm tortillas.",
         "price": 13.99,
         "image": "https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "55 minutes"
+        "estimateTime" : "55 minutes"
     },
     {
         "name": "Decadent Chocolate Lava Cake",
         "description": "Indulge in a warm, molten chocolate cake with a gooey, liquid center, served with a scoop of velvety vanilla ice cream.",
         "price": 8.99,
         "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=789&q=80",
-        "estimate-time" : "1 hr"
+        "estimateTime" : "1 hr"
     },
     {
         "name": "Flavorful Chicken Tikka Masala",
         "description": "Tender chunks of marinated chicken cooked in a creamy tomato-based sauce, infused with aromatic Indian spices and served with fragrant basmati rice.",
         "price": 16.99,
         "image": "https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1071&q=80",
-        "estimate-time" : "20 minutes"
+        "estimateTime" : "20 minutes"
     },
     {
         "name": "Fresh Caprese Salad",
         "description": "A delightful combination of ripe tomatoes, creamy mozzarella cheese, fragrant basil leaves, drizzled with balsamic glaze and olive oil.",
         "price": 10.99,
         "image": "https://images.unsplash.com/photo-1626451542138-1f86835340ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "50 minutes"
+        "estimateTime" : "50 minutes"
     },
     {
         "name": "Hearty Beef Stew",
         "description": "A comforting bowl of slow-cooked beef, tender vegetables, and aromatic herbs in a rich and savory broth, perfect for chilly evenings.",
         "price": 14.99,
         "image": "https://images.unsplash.com/photo-1546964124-0cce460f38ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80",
-        "estimate-time" : "25 minutes"
+        "estimateTime" : "25 minutes"
     },
     {
         "name": "Delicious Chicken Parmesan",
         "description": "Crispy breaded chicken cutlets smothered in tangy marinara sauce, topped with melted mozzarella cheese, and served with spaghetti.",
         "price": 15.99,
         "image": "https://images.unsplash.com/photo-1594221708779-94832f4320d1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-        "estimate-time" : "30 minutes"
+        "estimateTime" : "30 minutes"
     },
     {
         "name": "Fresh Fruit Smoothie Bowl",
         "description": "A vibrant blend of ripe fruits, Greek yogurt, and a variety of nutritious toppings, creating a colorful and refreshing breakfast delight.",
         "price": 9.99,
         "image": "https://images.unsplash.com/photo-1602881916963-5daf2d97c06e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
-        "estimate-time" : "55 minutes"
+        "estimateTime" : "55 minutes"
     },
     {
         "name": "Savory Pesto Pasta",
         "description": "Al dente pasta tossed in a fragrant basil pesto sauce, complemented by sun-dried tomatoes, toasted pine nuts, and Parmesan shavings.",
         "price": 12.99,
         "image": "https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80",
-        "estimate-time" : "1:30 hr"
+        "estimateTime" : "1:30 hr"
     },
     {
         "name": "Fluffy Pancakes with Maple Syrup",
         "description": "Start your day with a stack of fluffy pancakes, served with a generous drizzle of golden maple syrup and a pat of butter.",
         "price": 7.99,
         "image": "https://images.unsplash.com/photo-1554520735-0a6b8b6ce8b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=464&q=80",
-        "estimate-time" : "40 minutes"
+        "estimateTime" : "40 minutes"
     }
 ]

@@ -1,10 +1,11 @@
 import axios from "axios";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
+import useSelectedFoods from "../../hooks/useSelectedFoods/useSelectedFoods";
 
 const OrderSummary = () => {
 
-    const [customerSelectedProducts, refetch] = useSelectedFoods()
+    const [selectedFoods, refetch] = useSelectedFoods()
     function deleteProduct(id) {
         Swal.fire({
             title: 'Are you sure?',
@@ -22,7 +23,7 @@ const OrderSummary = () => {
                             refetch()
                             Swal.fire(
                                 'Deleted!',
-                                'Your product has been deleted.',
+                                'Your food has been deleted.',
                                 'success'
                             )
                         }
@@ -33,7 +34,7 @@ const OrderSummary = () => {
     }
 
     return (
-        <div>
+        <div className="pt-12 lg:pt-28">
             <div className="overflow-x-auto">
                 <table className="table bg-white">
                     {/* head */}
@@ -41,38 +42,39 @@ const OrderSummary = () => {
                         <tr className="uppercase bg-[#1B6B93] text-white">
                             <th>#</th>
                             <th>Product Image</th>
-                            <th>Product brand</th>
                             <th>Product Name</th>
                             <th>Total Pieces</th>
                             <th>Total Price</th>
+                            <th>Estimate Time</th>
                             <th>pay</th>
                             <th>delete</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            customerSelectedProducts?.map((selectProduct, index) => {
+                            selectedFoods?.map((selectedFood, index) => {
                                 return (
-                                    <tr key={selectProduct._id}>
+                                    <tr key={selectedFood._id}>
                                         <th>{index + 1}</th>
                                         <td>
                                             <div className="avatar">
                                                 <div className="mask mask-squircle w-12 h-12">
-                                                    <img src={selectProduct?.img} alt="product image" />
+                                                    <img src={selectedFood?.image} alt="product image" />
                                                 </div>
                                             </div>
                                         </td>
-                                        <td>{selectProduct?.brand}</td>
-                                        <td>{selectProduct?.productName}</td>
-                                        <td>{selectProduct?.productPiece}</td>
-                                        <td>$ {parseFloat(selectProduct?.price * selectProduct?.productPiece).toFixed(2)}</td>
+                                        <td>{selectedFood?.name}</td>
+                                        <td>{selectedFood?.foodPieces}</td>
+                                        <td>$ {parseFloat(selectedFood?.price * selectedFood?.foodPieces).toFixed(2)}</td>
+
+                                        <td>{selectedFood.estimateTime}</td>
                                         <td>
-                                            <Link to={`/dashboard/payment/${selectProduct._id}`}>
+                                            <Link to={`/payment/${selectedFood._id}`}>
                                                 <button className="bg-[#4941eb] hover:bg-[#2c22e6] btn-sm text-white rounded-md">PAY</button>
                                             </Link>
                                         </td>
                                         <td>
-                                            <button onClick={() => deleteProduct(selectProduct._id)} className="bg-[#e71c6a] hover:bg-[#c70a7b] btn-sm text-white rounded-md">DELETE</button>
+                                            <button onClick={() => deleteProduct(selectedFood._id)} className="bg-[#e71c6a] hover:bg-[#c70a7b] btn-sm text-white rounded-md">DELETE</button>
                                         </td>
                                     </tr>
                                 )
