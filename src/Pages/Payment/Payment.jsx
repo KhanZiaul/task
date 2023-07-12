@@ -9,7 +9,7 @@ const Payment = () => {
     const { id } = useParams()
     console.log(id,stripePromise)
     return (
-        <div className="pt-28">
+        <div className="pt-12 lg:pt-28">
             <Elements stripe={stripePromise}>
                 <Minimal id={id}></Minimal>
             </Elements>

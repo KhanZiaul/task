@@ -5,6 +5,7 @@ import FoodDetails from "../Pages/Home/FoodDetails/FoodDetails";
 import OrderSummary from "../Pages/OrderSummary/OrderSummary";
 import Payment from "../Pages/Payment/Payment";
 import PaymentHistory from "../Pages/PaymentHistory/PaymentHistory";
+import Contact from "../Pages/Contact/Contact";
 
 const router = createBrowserRouter([
     {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
             {
                 path:'/paymentHistory',
                 element:<PaymentHistory></PaymentHistory>
+            },
+            {
+                path:'/contact',
+                element:<Contact></Contact>
             }
         ]
     },

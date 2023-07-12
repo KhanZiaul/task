@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BsGithub ,BsFacebook , BsLinkedin , BsTwitter } from 'react-icons/bs';
+import { BsGithub, BsFacebook, BsLinkedin, BsTwitter } from 'react-icons/bs';
 
 const Footer = () => {
     return (
@@ -12,24 +12,23 @@ const Footer = () => {
                     <div>
                         <span className="footer-title">Services</span>
                         <Link to='/' className="link link-hover">Home</Link>
-                        <Link to='/shop' className="link link-hover">Order Summary</Link>
                     </div>
                     <div>
                         <span className="footer-title">Company</span>
-                        <Link to='/blog' className="link link-hover">Blogs</Link>
-                        <Link to='/about' className="link link-hover">About</Link>
-                        <Link to='/contact' className="link link-hover">Contact</Link>
+                        <Link to='/orderSummary' className="link link-hover">Order Summary</Link>
+                        <Link to='/paymentHistory' className="link link-hover">Payment History</Link>
+
                     </div>
                     <div>
                         <span className="footer-title">Legal</span>
-                        <Link to='/termsCondition' className="link link-hover">Terms&Conditions</Link>
+                        <Link to='/contact' className="link link-hover">Contact</Link>
                     </div>
                     <div>
                         <span className="footer-title">Social Site</span>
                         <div className="grid grid-flow-col gap-4">
-                            
+
                             <Link to='https://github.com/KhanZiaul'><BsGithub className='w-6 h-6 cursor-pointer'></BsGithub></Link>
-                            
+
                             <Link to='https://www.facebook.com/profile.php?id=100006621013410'><BsFacebook className='w-6 h-6 cursor-pointer'></BsFacebook></Link>
 
                             <Link to='https://www.linkedin.com/in/khan-ziaul-hasan-64299320a/'><BsLinkedin className='w-6 h-6 cursor-pointer'></BsLinkedin></Link>

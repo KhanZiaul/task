@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 const PaymentHistory = () => {
 
     const { data } = useQuery({
-        queryKey: ['selectedFoods'],
+        queryKey: ['paymentDoneFoods'],
         queryFn: async () => {
             const res = await fetch('http://localhost:5000/paymentDoneFood')
             return res.json()
@@ -12,7 +12,7 @@ const PaymentHistory = () => {
 
 
 return (
-    <div className="pt-24">
+    <div className="pt-12 lg:pt-28">
         <div className="overflow-x-auto">
             <table className="table bg-white">
                 {/* head */}
