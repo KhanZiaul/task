@@ -56,7 +56,7 @@ const FoodDetails = () => {
                             <p className="font-bold text-xl">Total pieces : </p>
                             <input className="border-2 rounded-md w-20 max-w-xs p-2 border-sky-700" defaultValue={1} min='1' type="number" name="foodPieces" id="" />
                         </div>
-                        <button className="rounded-md bg-sky-700 text-white font-semibold count px-5 py-3">Add To Cart</button>
+                        <button className="rounded-md bg-sky-700 text-white font-semibold count px-5">Add To Cart</button>
                     </div>
                 </form>
                 <p className="text-2xl font-bold">Food Details</p>
