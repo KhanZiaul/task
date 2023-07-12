@@ -20,7 +20,7 @@ const Minimal = ({ id }) => {
 
     useEffect(() => {
         if (selectedFood?.price > 0) {
-            axios.post('http://localhost:5000/create-payment-intent', { price: parseFloat(selectedFood?.price * selectedFood?.foodPieces) })
+            axios.post('https://task-server-site.vercel.app/create-payment-intent', { price: parseFloat(selectedFood?.price * selectedFood?.foodPieces) })
                 .then(data => {
                     console.log(data.data)
                     setClientSecret(data.data.clientSecret)
@@ -83,7 +83,7 @@ const Minimal = ({ id }) => {
             const formattedDate = date.toLocaleDateString('en-US', options);
             const timestamp = date.toISOString();
             console.log(formattedDate, timestamp)
-            axios.patch(`http://localhost:5000/payment/${selectedFood?._id}`, { payment: "true", date: formattedDate, timestamp: timestamp, TransactionId: paymentIntent.id })
+            axios.patch(`https://task-server-site.vercel.app/payment/${selectedFood?._id}`, { payment: "true", date: formattedDate, timestamp: timestamp, TransactionId: paymentIntent.id })
                 .then(data => {
                     console.log(data.data)
                     if (data.data.matchedCount > 0) {

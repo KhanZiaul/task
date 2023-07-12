@@ -5,7 +5,7 @@ const PaymentHistory = () => {
     const { data } = useQuery({
         queryKey: ['paymentDoneFoods'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/paymentDoneFood')
+            const res = await fetch('https://task-server-site.vercel.app/paymentDoneFood')
             return res.json()
         }
     })

@@ -18,7 +18,7 @@ const OrderSummary = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/deleteFood/${id}`)
+                axios.delete(`https://task-server-site.vercel.app/deleteFood/${id}`)
                     .then(data => {
                         if (data.data.deletedCount > 0) {
                             refetch()

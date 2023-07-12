@@ -5,7 +5,7 @@ function useFoods(){
     const { data : allFoods = [] , refetch} = useQuery({
         queryKey:['allFoodsCollections'],
         queryFn:async()=>{
-            const res = await fetch('http://localhost:5000/allFoodCollections')
+            const res = await fetch('https://task-server-site.vercel.app/allFoodCollections')
             return res.json()
         }
     })

@@ -9,7 +9,7 @@ const FoodDetails = () => {
     const { data } = useQuery({
         queryKey: ['food'],
         queryFn: async () => {
-            const data = await fetch(`http://localhost:5000/food/${id}`)
+            const data = await fetch(`https://task-server-site.vercel.app/food/${id}`)
             return data.json()
         }
     })
@@ -28,7 +28,7 @@ const FoodDetails = () => {
             payment: "false"
         }
         console.log(selectedfood)
-        axios.post('http://localhost:5000/secetedFood', selectedfood)
+        axios.post('https://task-server-site.vercel.app/secetedFood', selectedfood)
             .then(data => {
                 console.log(data.data)
                 if (data.data.acknowledged === true) {
