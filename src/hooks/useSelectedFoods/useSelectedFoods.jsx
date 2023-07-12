@@ -5,7 +5,7 @@ function useSelectedFoods() {
     const { data: selectedFoods = [], refetch } = useQuery({
         queryKey: ['selectedFoods'],
         queryFn: async () => {
-            const res = await fetch('http://localhost:5000/secetedFoods')
+            const res = await fetch('http://localhost:5000/selcetedFoods')
             return res.json()
         }
     })

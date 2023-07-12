@@ -7,6 +7,7 @@ const OrderSummary = () => {
 
     const [selectedFoods, refetch] = useSelectedFoods()
     function deleteProduct(id) {
+        console.log(id)
         Swal.fire({
             title: 'Are you sure?',
             text: "You won't be able to revert this!",
@@ -17,7 +18,7 @@ const OrderSummary = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`/deleteProduct/${id}`)
+                axios.delete(`http://localhost:5000/deleteFood/${id}`)
                     .then(data => {
                         if (data.data.deletedCount > 0) {
                             refetch()
@@ -67,9 +68,9 @@ const OrderSummary = () => {
                                         <td>{selectedFood?.foodPieces}</td>
                                         <td>$ {parseFloat(selectedFood?.price * selectedFood?.foodPieces).toFixed(2)}</td>
 
-                                        <td>{selectedFood.estimateTime}</td>
+                                        <td>{selectedFood?.estimateTime}</td>
                                         <td>
-                                            <Link to={`/payment/${selectedFood._id}`}>
+                                            <Link to={`/payment/${selectedFood?._id}`}>
                                                 <button className="bg-[#4941eb] hover:bg-[#2c22e6] btn-sm text-white rounded-md">PAY</button>
                                             </Link>
                                         </td>

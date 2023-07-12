@@ -38,12 +38,12 @@ const Navbar = () => {
 
 
                         <NavLink
-                            to="/blog"
+                            to="/paymentHistory"
                             className={({ isActive }) =>
                                 isActive ? "active" : ""
                             }
                         >
-                            BLOGS
+                             PAYMENT HISTORY
                         </NavLink>
 
                         <NavLink
@@ -103,12 +103,12 @@ const Navbar = () => {
 
                         <li>
                             <NavLink
-                                to="/blog"
+                                to="/paymentHistory"
                                 className={({ isActive }) =>
                                     isActive ? "active" : ""
                                 }
                             >
-                                BLOGS
+                                PAYMENT HISTORY
                             </NavLink>
                         </li>
 
